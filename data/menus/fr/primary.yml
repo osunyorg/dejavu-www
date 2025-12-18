@@ -1,6 +1,13 @@
 ---
 title: Menu principal
 items:
+- title: Personnes
+  target: "/personnes/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/persons"
+  file: content/fr/persons/_index.html
 - title: Actualités
   target: "/actualites/"
   kind: page
@@ -8,6 +15,13 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
+- title: Projets
+  target: "/projets/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/projects"
+  file: content/fr/projects/_index.html
 - title: Organisations
   target: "/organisations/"
   kind: page
@@ -29,20 +43,6 @@ items:
   children: []
   path: "/events"
   file: content/fr/events/_index.html
-- title: Projets
-  target: "/projets/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/projects"
-  file: content/fr/projects/_index.html
-- title: Personnes
-  target: "/personnes/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/persons"
-  file: content/fr/persons/_index.html
 - title: Services
   target: "/services/"
   kind: page
