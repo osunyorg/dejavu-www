@@ -1,13 +1,27 @@
 ---
 title: Menu principal
 items:
-- title: Actualités
-  target: "/a-propos/actualites/"
+- title: À propos
+  target: "/a-propos/"
   kind: page
   new_tab: false
-  children: []
-  path: "/posts"
-  file: content/fr/posts/_index.html
+  children:
+  - title: Qui sommes nous ?
+    target: "/a-propos/qui-sommes-nous/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/a-propos/qui-sommes-nous"
+    file: content/fr/pages/a-propos/qui-sommes-nous/_index.html
+  - title: Actualités
+    target: "/a-propos/actualites/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/posts"
+    file: content/fr/posts/_index.html
+  path: "/pages/a-propos"
+  file: content/fr/pages/a-propos/_index.html
 - title: Services
   target: "/services/"
   kind: page
@@ -20,6 +34,41 @@ items:
     children: []
     path: "/pages/services/conseil"
     file: content/fr/pages/services/conseil/_index.html
+  - title: Formation
+    target: "/services/formation/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/formation"
+    file: content/fr/pages/services/formation/_index.html
+  - title: Plaidoyer
+    target: "/services/plaidoyer/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/plaidoyer"
+    file: content/fr/pages/services/plaidoyer/_index.html
+  - title: Matériauthèque
+    target: "/services/materiautheque/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/materiautheque"
+    file: content/fr/pages/services/materiautheque/_index.html
   path: "/pages/services"
   file: content/fr/pages/services/_index.html
+- title: Soutenir
+  target: "/soutenir/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/soutenir"
+  file: content/fr/pages/soutenir/_index.html
+- title: Contact
+  target: "/contact/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/contact"
+  file: content/fr/pages/contact/_index.html
 
