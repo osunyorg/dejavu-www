@@ -9,6 +9,18 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      emails:
+        email:
+          label: >-
+            dejavu.asso@gmail.com
+          value: >-
+            mailto:dejavu.asso@gmail.com
+      social_networks:
+        linkedin:
+          label: >-
+            déjà-vu-association
+          value: >-
+            https://www.linkedin.com/company/d%C3%A9j%C3%A0-vu-association/
 
   taxonomies:
     administrator: administrators
