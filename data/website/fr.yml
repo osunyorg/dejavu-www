@@ -13,6 +13,7 @@ contents:
     ranks:
       base: 2
       children: 2
+    html_class: "block-class-p block-class-itemprop-name block-class-association block-class-deja-vu block-class-p"
     top:
       active: false
     data:
