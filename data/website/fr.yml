@@ -1,7 +1,56 @@
 default:
 contents_reading_time:
-  seconds: 0
+  seconds: 3
   text: >-
     moins d'une minute
 contents:
+  - kind: block
+    template: contact
+    title: >-
+      
+    slug: >-
+      
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+    data:
+      description: >-
+        
+
+      name: >-
+        Association Déjà-Vu
+
+      information: >-
+        
+
+      contact_details:
+        postal_address:
+          data:
+            address_name: >-
+              
+            address: >-
+              24 Avenue Joannès Masset
+            address_additional: >-
+              
+            zipcode: >-
+              69009
+            city: >-
+              Lyon
+            country:
+              name: >-
+                France
+              alpha2: >-
+                FR
+              alpha3: >-
+                FRA
+          text: >-
+            24 Avenue Joannès Masset 69009 Lyon FRANCE
+          html: >-
+            <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">24 Avenue Joannès Masset</span> <span itemprop="postalCode">69009</span> <span itemprop="addressLocality">Lyon</span> <span itemprop="addressCountry">FRANCE</span></address>
+
+      timetable:
+
+
 
