@@ -1,4 +1,6 @@
-// style homepage hero
+// HOMEPAGE
+
+// Style homepage hero
 
 .page__home .hero
     background-image: url('/assets/images/hero-homepage-background.jpg')
@@ -11,7 +13,7 @@
     h1
         word-spacing: 100vw
 
-//header logo and menu hero white
+// Header logo and menu hero white
 
 .page__home header:not(.is-sticky)
     .search-button--primary
@@ -21,3 +23,20 @@
         font-weight : bold
     .logo img
         content: url("/assets/images/logo-blanc.png")
+
+// Partners section
+
+.organizations
+    @include media-breakpoint-up(desktop)
+    .media
+        background: none
+        padding: 0
+.organization 
+    .organization-title
+        opacity: 0
+        height: 0
+        overflow: hidden
+    .media
+        img
+            mix-blend-mode: multiply
+
