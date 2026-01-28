@@ -65,6 +65,26 @@
                 grid-row-end: 4
                 @include h2
 
+// Three-column layout for ÉCO-CONCEPTION, COLLABORATION, ACV chapters
+.page__home
+    .block-call_to_action + .block-chapter.block-titled,
+    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled,
+    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled
+        @include media-breakpoint-up(desktop)
+            float: left
+            width: calc(100% / 3)
+            .container
+                padding: 0 calc(var(--grid-gutter) / 2)
+                max-width: 100%
+            .chapter .text
+                width: 100%
+        .block-title
+            font-weight: bold
+    // Clear float after the three columns
+    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled + *
+        @include media-breakpoint-up(desktop)
+            clear: both
+
 // Partners section
 .organizations
     @include media-breakpoint-up(desktop)
@@ -80,4 +100,3 @@
     .media
         img
             mix-blend-mode: multiply
-
