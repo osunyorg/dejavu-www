@@ -1,0 +1,22 @@
+{{ $bodyclass := .Params.bodyclass | default "" }}
+
+{{ $bodyclass = printf "%s__%s %s" .Type .Kind $bodyclass }}
+
+{{ if or .Params.design.full_width site.Params.design.force_full_width }}
+  {{ $bodyclass = printf "%s full-width" $bodyclass }}
+{{ end }}
+
+{{ if or .Params.design.toc.offcanvas site.Params.toc.force_offcanvas }}
+  {{ $bodyclass = printf "%s offcanvas-toc" $bodyclass }}
+{{ end }}
+
+{{ range .Params.posts_categories }}
+  {{ $bodyclass = printf "%s category--%s" $bodyclass . }}
+{{ end }}
+
+{{/* Custom: Add page__qui-sommes-nous class for the about us page */}}
+{{ if eq .RelPermalink "/a-propos/qui-sommes-nous/" }}
+  {{ $bodyclass = printf "%s page__qui-sommes-nous" $bodyclass }}
+{{ end }}
+
+{{ return $bodyclass }}

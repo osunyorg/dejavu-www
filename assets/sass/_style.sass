@@ -1,7 +1,11 @@
-// Disable all link icons across the whole website
+// Disable all hyperlink icons across the whole website
 a[target="_blank"]::after,
 .btn[target="_blank"]::after
     content: none !important
+
+// Replace @ icon with envelope icon for email links
+footer .email::after
+    content: "\eef3" !important
 
 // HOMEPAGE //
 
@@ -37,7 +41,7 @@ a[target="_blank"]::after,
     background-position: center
     background-repeat: no-repeat
     color: #ffffff
-    height: 50%
+    min-height: 50vh
     h1
         word-spacing: 100vw
 
@@ -119,3 +123,39 @@ a[target="_blank"]::after,
     .media
         img
             mix-blend-mode: multiply
+
+// ABOUT US PAGE (QUI SOMMES NOUS)
+
+// Header logo and menu hero
+.page__qui-sommes-nous header:not(.is-sticky)
+    .search-button--primary
+        color: #ffffff
+    .menu a
+        color: #ffffff
+    .header-button
+        color: #ffffff !important
+        span
+            color: #ffffff !important
+        span::before
+            color: #ffffff !important
+    .logo img
+        content: url("/assets/images/logo-blanc.png")
+// Switch to black logo and menu button when dropdown menu is open
+.page__qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
+    .logo img
+        content: url("/assets/images/logo-contour-noir.png")
+    .header-button
+        color: #000000 !important
+        span
+            color: #000000 !important
+        span::before
+            color: #000000 !important
+
+// Hero image and title
+.page__qui-sommes-nous .hero
+    background-image: url('/assets/images/hero-about-us-page-background.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    color: #ffffff
+    min-height: 50vh
