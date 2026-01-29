@@ -73,13 +73,27 @@
         @include media-breakpoint-up(desktop)
             float: left
             width: calc(100% / 3)
+            max-width: calc(var(--grid-max-width) / 3)
             .container
-                padding: 0 calc(var(--grid-gutter) / 2)
                 max-width: 100%
+                // Inner columns: half gutter on each side
+                padding-left: calc(var(--grid-gutter) / 2)
+                padding-right: calc(var(--grid-gutter) / 2)
             .chapter .text
                 width: 100%
         .block-title
             font-weight: bold
+    // First column: full gutter on left edge to align with grid + center offset on large screens
+    .block-call_to_action + .block-chapter.block-titled
+        @include media-breakpoint-up(desktop)
+            margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
+            .container
+                padding-left: var(--grid-gutter)
+    // Third column: full gutter on right edge to align with grid
+    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled
+        @include media-breakpoint-up(desktop)
+            .container
+                padding-right: var(--grid-gutter)
     // Clear float after the three columns
     .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled + *
         @include media-breakpoint-up(desktop)
