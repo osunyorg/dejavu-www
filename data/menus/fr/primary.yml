@@ -9,19 +9,19 @@ items:
   path: "/"
   file: content/fr/_index.html
 - title: À propos
-  target: "/a-propos/"
-  kind: page
+  target: ''
+  kind: blank
   new_tab: false
   children:
   - title: Qui sommes nous ?
-    target: "/a-propos/qui-sommes-nous/"
+    target: "/qui-sommes-nous/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/a-propos/qui-sommes-nous"
-    file: content/fr/pages/a-propos/qui-sommes-nous/_index.html
+    path: "/pages/qui-sommes-nous"
+    file: content/fr/pages/qui-sommes-nous/_index.html
   - title: Actualités
-    target: "/a-propos/actualites/"
+    target: "/actualites/"
     kind: page
     new_tab: false
     children: []
@@ -30,38 +30,38 @@ items:
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 - title: Services
-  target: "/services/"
-  kind: page
+  target: ''
+  kind: blank
   new_tab: false
   children:
   - title: Conseil
-    target: "/services/conseil/"
+    target: "/conseil/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/services/conseil"
-    file: content/fr/pages/services/conseil/_index.html
+    path: "/pages/conseil"
+    file: content/fr/pages/conseil/_index.html
   - title: Formation
-    target: "/services/formation/"
+    target: "/formation/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/services/formation"
-    file: content/fr/pages/services/formation/_index.html
+    path: "/pages/formation"
+    file: content/fr/pages/formation/_index.html
   - title: Plaidoyer
-    target: "/services/plaidoyer/"
+    target: "/plaidoyer/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/services/plaidoyer"
-    file: content/fr/pages/services/plaidoyer/_index.html
+    path: "/pages/plaidoyer"
+    file: content/fr/pages/plaidoyer/_index.html
   - title: Matériauthèque
-    target: "/services/materiautheque/"
+    target: "/materiautheque/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/services/materiautheque"
-    file: content/fr/pages/services/materiautheque/_index.html
+    path: "/pages/materiautheque"
+    file: content/fr/pages/materiautheque/_index.html
   path: "/pages/services"
   file: content/fr/pages/services/_index.html
 - title: Soutenir
