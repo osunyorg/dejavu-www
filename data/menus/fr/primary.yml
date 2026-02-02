@@ -5,44 +5,44 @@ items:
   target: "/"
   kind: page
   new_tab: false
-  children:
-  - title: Services
-    target: "/services/"
-    kind: page
-    new_tab: false
-    children:
-    - title: Conseil
-      target: "/services/conseil/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/services/conseil"
-      file: content/fr/pages/services/conseil/_index.html
-    - title: Formation
-      target: "/services/formation/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/services/formation"
-      file: content/fr/pages/services/formation/_index.html
-    - title: Plaidoyer
-      target: "/services/plaidoyer/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/services/plaidoyer"
-      file: content/fr/pages/services/plaidoyer/_index.html
-    - title: Matériauthèque
-      target: "/services/materiautheque/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/services/materiautheque"
-      file: content/fr/pages/services/materiautheque/_index.html
-    path: "/pages/services"
-    file: content/fr/pages/services/_index.html
+  children: []
   path: "/"
   file: content/fr/_index.html
+- title: Services
+  target: "/services/"
+  kind: page
+  new_tab: false
+  children:
+  - title: Conseil
+    target: "/services/conseil/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/conseil"
+    file: content/fr/pages/services/conseil/_index.html
+  - title: Formation
+    target: "/services/formation/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/formation"
+    file: content/fr/pages/services/formation/_index.html
+  - title: Plaidoyer
+    target: "/services/plaidoyer/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/plaidoyer"
+    file: content/fr/pages/services/plaidoyer/_index.html
+  - title: Matériauthèque
+    target: "/services/materiautheque/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/services/materiautheque"
+    file: content/fr/pages/services/materiautheque/_index.html
+  path: "/pages/services"
+  file: content/fr/pages/services/_index.html
 - title: À propos
   target: ''
   kind: blank
