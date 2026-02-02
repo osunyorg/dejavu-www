@@ -8,6 +8,27 @@ items:
   children: []
   path: "/"
   file: content/fr/_index.html
+- title: À propos
+  target: ''
+  kind: blank
+  new_tab: false
+  children:
+  - title: Qui sommes nous ?
+    target: "/qui-sommes-nous/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/qui-sommes-nous"
+    file: content/fr/pages/qui-sommes-nous/_index.html
+  - title: Actualités
+    target: "/actualites/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/posts"
+    file: content/fr/posts/_index.html
+  path: "/pages/a-propos"
+  file: content/fr/pages/a-propos/_index.html
 - title: Services
   target: "/services/"
   kind: page
@@ -43,27 +64,6 @@ items:
     file: content/fr/pages/services/materiautheque/_index.html
   path: "/pages/services"
   file: content/fr/pages/services/_index.html
-- title: À propos
-  target: ''
-  kind: blank
-  new_tab: false
-  children:
-  - title: Qui sommes nous ?
-    target: "/qui-sommes-nous/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/qui-sommes-nous"
-    file: content/fr/pages/qui-sommes-nous/_index.html
-  - title: Actualités
-    target: "/actualites/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/posts"
-    file: content/fr/posts/_index.html
-  path: "/pages/a-propos"
-  file: content/fr/pages/a-propos/_index.html
 - title: Soutenir
   target: "/soutenir/"
   kind: page
