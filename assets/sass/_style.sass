@@ -13,7 +13,8 @@ footer .email::after
 .page__home header:not(.is-sticky)
     .search-button--primary
         color: #ffffff
-    .menu a
+    .menu a,
+    .menu span
         color: #ffffff
     .header-button
         color: #ffffff !important
@@ -124,13 +125,14 @@ footer .email::after
         img
             mix-blend-mode: multiply
 
-// ABOUT-US PAGE 
+// ABOUT-US PAGE
 
 // Header logo and menu hero
-.page__qui-sommes-nous header:not(.is-sticky)
+.qui-sommes-nous header:not(.is-sticky)
     .search-button--primary
         color: #ffffff
-    .menu a
+    .menu a,
+    .menu span
         color: #ffffff
     .header-button
         color: #ffffff !important
@@ -141,7 +143,7 @@ footer .email::after
     .logo img
         content: url("/assets/images/logo-blanc.png")
 // Switch to black logo and menu button when dropdown menu is open
-.page__qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
+.qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
     .logo img
         content: url("/assets/images/logo-contour-noir.png")
     .header-button
@@ -152,7 +154,7 @@ footer .email::after
             color: #000000 !important
 
 // Breadcrumb navigation
-.page__qui-sommes-nous .breadcrumb
+.qui-sommes-nous .breadcrumb
     li
         &, a
             color: #ffffff
@@ -162,7 +164,7 @@ footer .email::after
             color: #ffffff
 
 // Hero image and title
-.page__qui-sommes-nous .hero
+.qui-sommes-nous .hero
     background-image: url('/assets/images/hero-about-us-page-background-image.jpg')
     background-size: cover
     background-position: center
