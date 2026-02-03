@@ -46,6 +46,27 @@ footer .email::after
     h1
         word-spacing: 100vw
 
+// Services pages cards - 2x2 grid below summary, aligned with description left edge
+.page__home .block-class-pages-cards
+    @include media-breakpoint-up(desktop)
+        .block-content
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            column-gap: var(--grid-gutter)
+            .top
+                grid-column: 1 / 13
+                grid-row: 1
+                .description
+                    @include body-text
+            .pages
+                grid-column: 5 / 13
+                grid-row: 2
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: var(--grid-gutter)
+                li
+                    margin: 0
+
 // Two-column intro chapter layout
 .page__home .block-chapter:first-of-type
     .chapter
@@ -111,7 +132,6 @@ footer .email::after
 
 // Partners section
 .organizations
-    @include media-breakpoint-up(desktop)
     @include grid(8)
     .media
         background: none
@@ -128,7 +148,7 @@ footer .email::after
 // ABOUT-US PAGE
 
 // Header logo and menu hero
-.qui-sommes-nous header:not(.is-sticky)
+.page-qui-sommes-nous header:not(.is-sticky)
     .search-button--primary
         color: #ffffff
     .menu a,
@@ -143,7 +163,7 @@ footer .email::after
     .logo img
         content: url("/assets/images/logo-blanc.png")
 // Switch to black logo and menu button when dropdown menu is open
-.qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
+.page-qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
     .logo img
         content: url("/assets/images/logo-contour-noir.png")
     .header-button
@@ -154,7 +174,7 @@ footer .email::after
             color: #000000 !important
 
 // Breadcrumb navigation
-.qui-sommes-nous .breadcrumb
+.page-qui-sommes-nous .breadcrumb
     li
         &, a
             color: #ffffff
@@ -164,7 +184,7 @@ footer .email::after
             color: #ffffff
 
 // Hero image and title
-.qui-sommes-nous .hero
+.page-qui-sommes-nous .hero
     background-image: url('/assets/images/hero-about-us-page-background-image.jpg')
     background-size: cover
     background-position: center
