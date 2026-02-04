@@ -138,6 +138,14 @@ footer address
         @include media-breakpoint-up(desktop)
             clear: both
 
+// Homepage CTA button with right arrow
+.block-class-with-cover
+    .actions a
+        @include icon(arrow-right-line, after)
+        &::after
+            margin-left: $spacing-2
+            content: "\ea6c" !important
+
 // Partners section
 .organizations
     @include grid(8)
@@ -201,3 +209,43 @@ footer address
     overflow: hidden
     color: $color-text-alt
     min-height: 50vh
+
+// Centered chapter block
+.block-class-centered-chapter
+    @include in-page-without-sidebar
+        .chapter
+            justify-content: center
+            .text
+                width: columns(8)
+
+// Centered definitions block
+.block-class-definitions-about-us-page
+    @include in-page-without-sidebar
+        .definitions
+            width: columns(8)
+            margin-left: auto
+            margin-right: auto
+            details p
+                padding-left: 0
+                margin-left: 0
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-about-us
+
+// CTA button aligned with definitions block
+.block-class-right-aligned-button
+    @include in-page-without-sidebar
+        .call_to_action
+            width: columns(8)
+            margin-left: auto
+            margin-right: auto
+            display: flex
+            justify-content: flex-end
+            .actions a
+                margin-right: 0
+    .actions a
+        @include icon(arrow-right-line, after)
+        &::after
+            margin-left: $spacing-2
+            content: "\ea6c" !important
