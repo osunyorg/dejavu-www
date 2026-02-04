@@ -249,3 +249,42 @@ footer address
         &::after
             margin-left: $spacing-2
             content: "\ea6c" !important
+
+// SUPPORT PAGE
+
+// Right-aligned chapter block
+.block-class-right-aligned-chapter
+    @include in-page-without-sidebar
+        .chapter
+            width: columns(8)
+            margin-left: auto
+            margin-right: 0
+            .text
+                width: 100%
+
+// CTA buttons aligned with right-aligned chapter
+.block-class-right-aligned-chapter + .block-call_to_action
+    @include in-page-without-sidebar
+        .call_to_action
+            width: columns(8)
+            margin-left: auto
+            margin-right: 0
+    .actions
+        display: flex
+        flex-wrap: wrap
+        gap: $spacing-3
+        a
+            --btn-background: #{$block-call-to-action-button-background}
+            --btn-border: #{$block-call-to-action-button-border}
+            --btn-color: #{$block-call-to-action-button-color}
+            --btn-hover-background: #{$block-call-to-action-button-hover-background}
+            --btn-hover-border: #{$block-call-to-action-button-hover-border}
+            --btn-hover-color: #{$block-call-to-action-button-hover-color}
+            --btn-min-width: #{columns(2)}
+            @extend .button
+            text-decoration: none
+            margin: 0
+            @include icon(arrow-right-line, after)
+            &::after
+                margin-left: $spacing-2
+                content: "\ea6c" !important
