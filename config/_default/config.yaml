@@ -8,6 +8,18 @@ params:
   logo:
     header: '/assets/images/logo.png'
     footer: '/assets/images/logo.png'
+  image_sizes:
+    sections:
+      home:
+        hero:
+          mobile: 800
+          tablet: 1400
+          desktop: 1920
+      pages:
+        hero:
+          mobile: 800
+          tablet: 1400
+          desktop: 1920
   home:
     head:
       title: site
