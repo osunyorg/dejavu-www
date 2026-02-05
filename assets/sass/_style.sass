@@ -54,27 +54,6 @@ footer address
     h1
         word-spacing: 100vw
 
-// Services pages cards - 2x2 grid below summary, aligned with description left edge
-.page__home .block-class-pages-cards
-    @include media-breakpoint-up(desktop)
-        .block-content
-            display: grid
-            grid-template-columns: repeat(12, 1fr)
-            column-gap: var(--grid-gutter)
-            .top
-                grid-column: 1 / 13
-                grid-row: 1
-                .description
-                    @include body-text
-            .pages
-                grid-column: 5 / 13
-                grid-row: 2
-                display: grid
-                grid-template-columns: repeat(2, 1fr)
-                gap: var(--grid-gutter)
-                li
-                    margin: 0
-
 // Two-column intro chapter layout
 .page__home .block-class-two-columns-chapter
     .chapter
@@ -104,7 +83,56 @@ footer address
                 grid-row-end: 4
                 @include h2
 
-// Three-column layout for ÉCO-CONCEPTION, COLLABORATION, ACV chapters
+// Services pages cards - 2x2 grid below summary, aligned with description left edge
+.page__home .block-class-pages-cards
+    .block-content .top .description
+        @include body-text
+    @include media-breakpoint-up(desktop)
+        .block-content
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            column-gap: var(--grid-gutter)
+            .top
+                grid-column: 1 / 13
+                grid-row: 1
+            .pages
+                grid-column: 5 / 13
+                grid-row: 2
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: var(--grid-gutter)
+                li
+                    margin: 0
+
+// CTA block styling
+.block-class-with-cover
+    .actions a
+        @include icon(arrow-right-line, after)
+        &::after
+            margin-left: $spacing-2
+            content: "\ea6c" !important
+    // Make title display as default h2
+    .block-title
+        font-family: $h2-font-family !important
+        font-size: var(--h2-size) !important
+        font-weight: $h2-weight !important
+        line-height: var(--h2-line-height) !important
+        font-style: $h2-style !important
+        text-transform: $h2-text-transform !important
+        letter-spacing: $h2-letter-spacing !important
+    // Make description text plain body text instead of h2
+    .call_to_action .description p
+        font-family: $body-font-family !important
+        font-size: var(--body-size) !important
+        line-height: var(--body-line-height) !important
+        font-weight: normal !important
+        letter-spacing: $body-letter-spacing !important
+        text-transform: none !important
+    // Image takes columns 7-13 (6 columns wide)
+    .call_to_action--with-image > figure
+        grid-column: 7 / 13 !important
+
+// Three-column layout for ÉCO-CONCEPTION, COLLABORATION, ACV chapter
 .page__home
     .block-call_to_action + .block-chapter.block-titled,
     .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled,
@@ -138,14 +166,6 @@ footer address
         @include media-breakpoint-up(desktop)
             clear: both
 
-// Homepage CTA button with right arrow
-.block-class-with-cover
-    .actions a
-        @include icon(arrow-right-line, after)
-        &::after
-            margin-left: $spacing-2
-            content: "\ea6c" !important
-
 // Partners section
 .organizations
     @include grid(8)
@@ -160,6 +180,7 @@ footer address
     .media
         img
             mix-blend-mode: multiply
+
 
 // ABOUT-US PAGE
 
@@ -249,6 +270,7 @@ footer address
         &::after
             margin-left: $spacing-2
             content: "\ea6c" !important
+
 
 // SUPPORT PAGE
 
