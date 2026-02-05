@@ -104,7 +104,7 @@ footer address
                 li
                     margin: 0
 
-// CTA block styling
+// CTA block
 .block-class-with-cover
     .actions a
         @include icon(arrow-right-line, after)
@@ -132,37 +132,38 @@ footer address
     .call_to_action--with-image > figure
         grid-column: 7 / 13 !important
 
-// Three-column layout for ÉCO-CONCEPTION, COLLABORATION, ACV chapter
-.page__home
-    .block-call_to_action + .block-chapter.block-titled,
-    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled,
-    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled
-        @include media-breakpoint-up(desktop)
-            float: left
-            width: calc(100% / 3)
-            max-width: calc(var(--grid-max-width) / 3)
-            .container
-                max-width: 100%
-                // Inner columns: half gutter on each side
-                padding-left: calc(var(--grid-gutter) / 2)
-                padding-right: calc(var(--grid-gutter) / 2)
-            .chapter .text
-                width: 100%
-        .block-title
-            font-weight: bold
-    // First column: full gutter on left edge to align with grid + center offset on large screens
-    .block-call_to_action + .block-chapter.block-titled
-        @include media-breakpoint-up(desktop)
-            margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
-            .container
-                padding-left: var(--grid-gutter)
-    // Third column: full gutter on right edge to align with grid
-    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled
-        @include media-breakpoint-up(desktop)
-            .container
-                padding-right: var(--grid-gutter)
+// ÉCO-CONCEPTION, COLLABORATION, ACV chapters
+.block-class-three-columns-chapter-one,
+.block-class-three-columns-chapter-two,
+.block-class-three-columns-chapter-three
+    @include media-breakpoint-up(desktop)
+        float: left
+        width: calc(100% / 3)
+        max-width: calc(var(--grid-max-width) / 3)
+        .container
+            max-width: 100%
+            // Inner columns: half gutter on each side
+            padding-left: calc(var(--grid-gutter) / 2)
+            padding-right: calc(var(--grid-gutter) / 2)
+        .chapter .text
+            width: 100%
+    .block-title
+        font-weight: bold
+
+// First column: full gutter on left edge to align with grid + center offset on large screens
+.block-class-three-columns-chapter-one
+    @include media-breakpoint-up(desktop)
+        margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
+        .container
+            padding-left: var(--grid-gutter)
+
+// Third column: full gutter on right edge to align with grid
+.block-class-three-columns-chapter-three
+    @include media-breakpoint-up(desktop)
+        .container
+            padding-right: var(--grid-gutter)
     // Clear float after the three columns
-    .block-call_to_action + .block-chapter.block-titled + .block-chapter.block-titled + .block-chapter.block-titled + *
+    + *
         @include media-breakpoint-up(desktop)
             clear: both
 
@@ -180,6 +181,7 @@ footer address
     .media
         img
             mix-blend-mode: multiply
+
 
 
 // ABOUT-US PAGE
@@ -231,7 +233,7 @@ footer address
     color: $color-text-alt
     min-height: 50vh
 
-// Centered chapter block
+// Chapter block
 .block-class-centered-chapter
     @include in-page-without-sidebar
         .chapter
@@ -239,7 +241,7 @@ footer address
             .text
                 width: columns(8)
 
-// Centered definitions block
+// Definitions block
 .block-class-definitions-about-us-page
     @include in-page-without-sidebar
         .definitions
@@ -253,8 +255,9 @@ footer address
                 font-weight: bold
             details:hover::after
                 border-bottom-color: $color-accent-about-us
+                border-bottom-width: calc(var(--border-width) * 3)
 
-// CTA button aligned with definitions block
+// CTA block
 .block-class-right-aligned-button
     @include in-page-without-sidebar
         .call_to_action
@@ -271,10 +274,17 @@ footer address
             margin-left: $spacing-2
             content: "\ea6c" !important
 
+// People block
+.block-class-people
+    .person-role p
+        br
+            display: block
+            content: ""
+            margin-top: $spacing-2
 
 // SUPPORT PAGE
 
-// Right-aligned chapter block
+// Chapter block
 .block-class-right-aligned-chapter
     @include in-page-without-sidebar
         .chapter
@@ -284,7 +294,7 @@ footer address
             .text
                 width: 100%
 
-// CTA buttons aligned with right-aligned chapter
+// CTA buttons chapter
 .block-class-right-aligned-chapter + .block-call_to_action
     @include in-page-without-sidebar
         .call_to_action
