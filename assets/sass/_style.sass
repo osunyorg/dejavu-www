@@ -332,3 +332,47 @@ footer address
             &::after
                 margin-left: $spacing-2
                 content: "\ea6c" !important
+
+
+
+// SERVICES PAGES //
+
+// CONSULTING PAGE //
+
+// Definitions block
+.block-class-right-aligned-definitions-consulting
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-consulting
+                border-bottom-width: calc(var(--border-width) * 3)
+
+// TRAINING PAGE //
+
+// Definitions block
+.block-class-right-aligned-definitions-training
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-training
+                border-bottom-width: calc(var(--border-width) * 3)
+
+
+// ADVOCACY PAGE //
+
+
+// MATERIAL LIBRARY PAGE //
+
+// Definitions block
+.block-class-right-aligned-definitions-material-library
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-material-library
+                border-bottom-width: calc(var(--border-width) * 3)
