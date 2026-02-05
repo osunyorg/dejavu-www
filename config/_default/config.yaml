@@ -24,7 +24,7 @@ params:
         reading_time: false
         summary: true
         subtitle: true
-      truncate_description: 200 # Set to 0 to disable truncate
+      truncate_description: 0 # Set to 0 to disable truncate
     single:
       options:
         authors: false
