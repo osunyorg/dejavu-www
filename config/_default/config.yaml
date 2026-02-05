@@ -1,6 +1,21 @@
 theme: osuny
 _merge: deep
 params:
+  persons:
+    sitemap:
+      ignore: true
+  events:
+    sitemap:
+      ignore: true
+  exhibitions:
+    sitemap:
+      ignore: true
+  organizations:
+    sitemap:
+      ignore: true
+  projects:
+    sitemap:
+      ignore: true
   summary:
     position: hero
   search:
