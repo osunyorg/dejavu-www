@@ -1,21 +1,31 @@
-// Disable all hyperlink icons across the whole website
+// GLOBAL //
+
+// Hyperlink icon
 a[target="_blank"]::after,
 .btn[target="_blank"]::after
     content: none !important
 
-// Replace @ icon with envelope icon for email links
+// Email icon
 footer .email::after
     content: "\eef3" !important
 
-// Address in footer uses Franklin Gothic ATF font
+// Footer address
 footer address
     @include meta
     font-family: $heading-font-family
     font-style: normal
 
+// Breadcrumb
+.breadcrumb li:not(:first-child)::before
+    color: $color-text
+
+// Post sidebar labels
+.post-infos li > span
+    color: $color-text
+
 // HOMEPAGE //
 
-// Header logo and menu hero
+// Header
 .page__home header:not(.is-sticky)
     .search-button--primary
         color: $color-text-alt
@@ -41,7 +51,7 @@ footer address
         span::before
             color: $color-text !important
 
-// Hero image and title
+// Hero
 .page__home .hero
     background-image: url('/assets/images/hero-homepage-background-image.jpg')
     background-size: cover
@@ -54,7 +64,7 @@ footer address
     h1
         word-spacing: 100vw
 
-// Two-column intro chapter layout
+// Chapter block
 .page__home .block-class-two-columns-chapter
     .chapter
         @include media-breakpoint-up(desktop)
@@ -83,7 +93,7 @@ footer address
                 grid-row-end: 4
                 @include h2
 
-// Services pages cards - 2x2 grid below summary, aligned with description left edge
+// Pages block
 .page__home .block-class-pages-cards
     .block-content .top .description
         @include body-text
@@ -132,7 +142,7 @@ footer address
     .call_to_action--with-image > figure
         grid-column: 7 / 13 !important
 
-// ÉCO-CONCEPTION, COLLABORATION, ACV chapters
+// ÉCO-CONCEPTION, COLLABORATION, ACV chapter blocks
 .block-class-three-columns-chapter-one,
 .block-class-three-columns-chapter-two,
 .block-class-three-columns-chapter-three
@@ -150,14 +160,14 @@ footer address
     .block-title
         font-weight: bold
 
-// First column: full gutter on left edge to align with grid + center offset on large screens
+// First column
 .block-class-three-columns-chapter-one
     @include media-breakpoint-up(desktop)
         margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
         .container
             padding-left: var(--grid-gutter)
 
-// Third column: full gutter on right edge to align with grid
+// Third column
 .block-class-three-columns-chapter-three
     @include media-breakpoint-up(desktop)
         .container
@@ -167,7 +177,7 @@ footer address
         @include media-breakpoint-up(desktop)
             clear: both
 
-// Partners section
+// Organisations block
 .organizations
     @include grid(8)
     .media
@@ -184,9 +194,9 @@ footer address
 
 
 
-// ABOUT-US PAGE
+// ABOUT-US PAGE //
 
-// Header logo and menu hero
+// Header
 .page-qui-sommes-nous header:not(.is-sticky)
     .search-button--primary
         color: $color-text-alt
@@ -212,7 +222,7 @@ footer address
         span::before
             color: $color-text !important
 
-// Breadcrumb navigation
+// Breadcrumb
 .page-qui-sommes-nous .breadcrumb
     li
         &, a
@@ -222,7 +232,7 @@ footer address
         &:not(:first-child)::before
             color: $color-text-alt
 
-// Hero image and title
+// Hero
 .page-qui-sommes-nous .hero
     background-image: url('/assets/images/hero-about-us-background-image.jpg')
     background-size: cover
@@ -282,7 +292,9 @@ footer address
             content: ""
             margin-top: $spacing-2
 
-// SUPPORT PAGE
+
+
+// SUPPORT PAGE //
 
 // Chapter block
 .block-class-right-aligned-chapter
