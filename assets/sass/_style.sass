@@ -15,35 +15,21 @@ footer address
     font-family: $heading-font-family
     font-style: normal
 
-// Breadcrumb
-.breadcrumb li:not(:first-child)::before
-    color: $color-text
-
-// Post sidebar labels
-.post-infos li > span
-    color: $color-text
-
-// TOC sidebar label
-.toc-container
-    @include in-page-with-sidebar
-        .toc-title
-            color: $color-text
-
 // HOMEPAGE //
 
 // Header
 .page__home header:not(.is-sticky)
     .search-button--primary
-        color: $color-text-alt
+        color: $color-background
     .menu a,
     .menu span
-        color: $color-text-alt
+        color: $color-background
     .header-button
-        color: $color-text-alt !important
+        color: $color-background !important
         span
-            color: $color-text-alt !important
+            color: $color-background !important
         span::before
-            color: $color-text-alt !important
+            color: $color-background !important
     .logo img
         content: url("/assets/images/logo-blanc.png")
 // Switch to black logo and menu button when dropdown menu is open
@@ -65,7 +51,7 @@ footer address
     background-repeat: no-repeat
     position: relative
     overflow: hidden
-    color: $color-text-alt
+    color: $color-background
     min-height: 50vh
     h1
         word-spacing: 100vw
@@ -205,16 +191,16 @@ footer address
 // Header
 .page-qui-sommes-nous header:not(.is-sticky)
     .search-button--primary
-        color: $color-text-alt
+        color: $color-background
     .menu a,
     .menu span
-        color: $color-text-alt
+        color: $color-background
     .header-button
-        color: $color-text-alt !important
+        color: $color-background !important
         span
-            color: $color-text-alt !important
+            color: $color-background !important
         span::before
-            color: $color-text-alt !important
+            color: $color-background !important
     .logo img
         content: url("/assets/images/logo-blanc.png")
 // Switch to black logo and menu button when dropdown menu is open
@@ -232,11 +218,11 @@ footer address
 .page-qui-sommes-nous .breadcrumb
     li
         &, a
-            color: $color-text-alt
+            color: $color-background
         &.active
-            color: $color-text-alt
+            color: $color-background
         &:not(:first-child)::before
-            color: $color-text-alt
+            color: $color-background
 
 // Hero
 .page-qui-sommes-nous .hero
@@ -246,7 +232,7 @@ footer address
     background-repeat: no-repeat
     position: relative
     overflow: hidden
-    color: $color-text-alt
+    color: $color-background
     min-height: 50vh
 
 // Chapter block
