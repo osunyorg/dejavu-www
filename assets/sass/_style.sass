@@ -343,7 +343,7 @@ footer address
 
 // SERVICES PAGES //
 
-// Chapter title block
+// Chapter block
 .block-class-chapter-title .chapter .block-title
     font-family: $heading-font-family
     font-size: var(--h2-size)
@@ -352,6 +352,21 @@ footer address
     font-style: $h2-style
     text-transform: $h2-text-transform
     letter-spacing: $h2-letter-spacing
+
+// CTA block
+.block-class-right-aligned-cta .call_to_action .description p
+    font-family: $heading-font-family
+    font-size: var(--body-size)
+    line-height: var(--body-line-height)
+    font-weight: normal
+    letter-spacing: $body-letter-spacing
+    text-transform: none
+
+.block-class-right-aligned-cta .actions a
+    @include icon(arrow-right-line, after)
+    &::after
+        margin-left: $spacing-2
+        content: "\ea6c" !important
 
 // CONSULTING PAGE //
 
