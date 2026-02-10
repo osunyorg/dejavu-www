@@ -386,6 +386,12 @@ footer address
 
 // MATERIAL LIBRARY PAGE //
 
+// Gallery block
+.block-class-custom-grid
+    @include in-page-with-sidebar
+        .gallery
+            @include flexbox-grid(3)
+
 // Definitions block
 .block-class-right-aligned-definitions-material-library
     @include in-page-with-sidebar
