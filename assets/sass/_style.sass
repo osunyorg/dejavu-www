@@ -325,9 +325,19 @@ footer address
                 margin-left: $spacing-2
                 content: "\ea6c" !important
 
-
-
 // SERVICES PAGES //
+
+// Pages cards
+.block-pages--grid.with-images
+    .pages
+        @include media-breakpoint-up(desktop)
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: var(--grid-gutter)
+    article .media img
+        aspect-ratio: auto
+        object-fit: contain
+        max-height: 300px
 
 // Chapter block
 .block-class-chapter-title .chapter .block-title
@@ -407,3 +417,14 @@ footer address
             details:hover::after
                 border-bottom-color: $color-accent-material-library
                 border-bottom-width: calc(var(--border-width) * 3)
+            // Image inside "4. Nous trouver" definition
+            details:nth-child(4) [itemprop="description"]::after
+                content: ""
+                display: block
+                margin-top: $spacing-3
+                width: 100%
+                aspect-ratio: 16 / 9
+                background-image: url("/assets/images/plan-locaux.jpg")
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
