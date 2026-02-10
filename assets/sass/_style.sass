@@ -391,6 +391,12 @@ footer address
     @include in-page-with-sidebar
         .gallery
             @include flexbox-grid(3)
+            figure picture
+                aspect-ratio: 1 / 1
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
 
 // Definitions block
 .block-class-right-aligned-definitions-material-library
