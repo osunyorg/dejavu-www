@@ -1,0 +1,110 @@
+// GLOBAL //
+
+// Hyperlink icon
+a[target="_blank"]::after,
+.btn[target="_blank"]::after
+    content: none !important
+
+// Email icon
+footer .email::after
+    content: "\eef3" !important
+
+// Footer address
+footer address
+    @include meta
+    font-family: $heading-font-family
+    font-style: normal
+
+
+
+// HOMEPAGE //
+
+// Header
+.page__home header:not(.is-sticky)
+    .search-button--primary
+        color: $color-background
+    .menu a,
+    .menu span
+        color: $color-background
+    .header-button
+        color: $color-background !important
+        span
+            color: $color-background !important
+        span::before
+            color: $color-background !important
+    .logo img
+        content: url("/assets/images/logo-blanc.png")
+// Switch to black logo and menu button when dropdown menu is open
+.page__home header:not(.is-sticky):has([aria-expanded="true"])
+    .logo img
+        content: url("/assets/images/logo-contour-noir.png")
+    .header-button
+        color: $color-text !important
+        span
+            color: $color-text !important
+        span::before
+            color: $color-text !important
+
+// Hero
+.page__home .hero
+    background-image: url('/assets/images/hero-homepage-background-image.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
+    overflow: hidden
+    color: $color-background
+    min-height: 50vh
+    h1
+        word-spacing: 100vw
+
+
+
+// ABOUT-US PAGE //
+
+// Header
+.page-qui-sommes-nous header:not(.is-sticky)
+    .search-button--primary
+        color: $color-background
+    .menu a,
+    .menu span
+        color: $color-background
+    .header-button
+        color: $color-background !important
+        span
+            color: $color-background !important
+        span::before
+            color: $color-background !important
+    .logo img
+        content: url("/assets/images/logo-blanc.png")
+// Switch to black logo and menu button when dropdown menu is open
+.page-qui-sommes-nous header:not(.is-sticky):has([aria-expanded="true"])
+    .logo img
+        content: url("/assets/images/logo-contour-noir.png")
+    .header-button
+        color: $color-text !important
+        span
+            color: $color-text !important
+        span::before
+            color: $color-text !important
+
+// Breadcrumb
+.page-qui-sommes-nous .breadcrumb
+    li
+        &, a
+            color: $color-background
+        &.active
+            color: $color-background
+        &:not(:first-child)::before
+            color: $color-background
+
+// Hero
+.page-qui-sommes-nous .hero
+    background-image: url('/assets/images/hero-about-us-background-image.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
+    overflow: hidden
+    color: $color-background
+    min-height: 50vh

@@ -1,0 +1,50 @@
+// ABOUT-US PAGE //
+
+// Chapter block
+.block-class-centered-chapter
+    @include in-page-without-sidebar
+        .chapter
+            justify-content: center
+            .text
+                width: columns(8)
+
+// Definitions block
+.block-class-definitions-about-us-page
+    @include in-page-without-sidebar
+        .definitions
+            width: columns(8)
+            margin-left: auto
+            margin-right: auto
+            details p
+                padding-left: 0
+                margin-left: 0
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-about-us
+                border-bottom-width: calc(var(--border-width) * 3)
+
+// CTA block
+.block-class-right-aligned-button
+    @include in-page-without-sidebar
+        .call_to_action
+            width: columns(8)
+            margin-left: auto
+            margin-right: auto
+            display: flex
+            justify-content: flex-end
+            .actions a
+                margin-right: 0
+    .actions a
+        @include icon(arrow-right-line, after)
+        &::after
+            margin-left: $spacing-2
+            content: "\ea6c" !important
+
+// People block
+.block-class-people
+    .person-role p
+        br
+            display: block
+            content: ""
+            margin-top: $spacing-2

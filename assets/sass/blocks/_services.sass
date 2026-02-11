@@ -1,0 +1,109 @@
+// SERVICES PAGES //
+
+// Pages cards
+.block-pages--grid.with-images
+    .pages
+        @include media-breakpoint-up(desktop)
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: var(--grid-gutter)
+    article .media img
+        aspect-ratio: auto
+        object-fit: contain
+        max-height: 300px
+
+// Chapter block
+.block-class-chapter-title .chapter .block-title
+    font-family: $heading-font-family
+    font-size: var(--h2-size)
+    font-weight: $h2-weight
+    line-height: var(--h2-line-height)
+    font-style: $h2-style
+    text-transform: $h2-text-transform
+    letter-spacing: $h2-letter-spacing
+
+// Image block
+.block-image
+    @include in-page-with-sidebar
+        picture
+            margin-right: 0
+
+// CTA block
+.block-class-right-aligned-cta .call_to_action .description p
+    font-family: $heading-font-family
+    font-size: var(--body-size)
+    line-height: var(--body-line-height)
+    font-weight: normal
+    letter-spacing: $body-letter-spacing
+    text-transform: none
+
+.block-class-right-aligned-cta .actions a
+    @include icon(arrow-right-line, after)
+    &::after
+        margin-left: $spacing-2
+        content: "\ea6c" !important
+
+// CONSULTING PAGE //
+
+// Definitions block
+.block-class-right-aligned-definitions-consulting
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-consulting
+                border-bottom-width: calc(var(--border-width) * 3)
+
+// TRAINING PAGE //
+
+// Definitions block
+.block-class-right-aligned-definitions-training
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-training
+                border-bottom-width: calc(var(--border-width) * 3)
+
+// ADVOCACY PAGE
+
+// Image block
+.block.block-class-right-aligned-image
+    margin-top: $spacing-5 !important
+
+// MATERIAL LIBRARY PAGE //
+
+// Gallery block
+.block-class-custom-grid
+    @include in-page-with-sidebar
+        .gallery
+            @include flexbox-grid(3)
+            figure picture
+                aspect-ratio: 1 / 1
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+
+// Definitions block
+.block-class-right-aligned-definitions-material-library
+    @include in-page-with-sidebar
+        .definitions
+            details summary:hover
+                font-weight: bold
+            details:hover::after
+                border-bottom-color: $color-accent-material-library
+                border-bottom-width: calc(var(--border-width) * 3)
+            // Image inside "4. Nous trouver" definition
+            details:nth-child(4) [itemprop="description"]::after
+                content: ""
+                display: block
+                margin-top: $spacing-3
+                width: 100%
+                aspect-ratio: 16 / 9
+                background-image: url("/assets/images/plan-locaux.jpg")
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
