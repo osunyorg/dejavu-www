@@ -97,6 +97,9 @@ footer address
             color: $color-background
         &:not(:first-child)::before
             color: $color-background
+    @include media-breakpoint-down(desktop)
+        a
+            text-decoration-color: $color-background
 
 // Hero
 .page-qui-sommes-nous .hero
