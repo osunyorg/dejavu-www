@@ -24,18 +24,18 @@ Styling files all located in **assets > saas directory** :
 
 ## Design system
 
-#### Footer
+### Footer
 
 * **Partial** to display Déjà-vu's postal adress at the same level as the logo. Partial is located in layouts > partials > footer : site.html
 * **Credits lines** added in i18n : fr.yml
 
-#### Homepage
+### Homepage
 
 Special styling in **_design-system.sass** : 
 * **Header** : navbar text content + logo in white
 * **Hero** : background image added + title in white
 
-#### About-us page
+### About-us page
 
 Special styling in **_design-system.sass** : 
 * **Header** : navbar text content + logo in white
@@ -44,7 +44,7 @@ Special styling in **_design-system.sass** :
 
 ## Blocks
 
-#### Homepage
+### Homepage
 
 Special styling in **_homepage.sass**.
 
@@ -54,7 +54,7 @@ Custom html selectors added through Osuny's backoffice include :
 * `with-cover` : for CTA block : font styling + bigger image
 * `three-columns-chapter-one`, `three-columns-chapter-two`, `three-columns-chapter-three` : chapter in 3 columns
 
-#### About-us page
+### About-us page
 
 Custom html selectors added through Osuny's backoffice include :
 * `centered-chapter` : chapter centered in the grid
@@ -63,7 +63,7 @@ Custom html selectors added through Osuny's backoffice include :
 
 **Partial** to add a line break in people's role description. Partial is located in layouts > partials > persons : person.html
 
-#### Services page
+### Services page
 
 Custom html selectors added through Osuny's backoffice include :
 * `chapter-title` : for chapter block : font styling on all services pages
@@ -74,7 +74,7 @@ Custom html selectors added through Osuny's backoffice include :
 * `custom-grid` : for gallery block : custom grid, square images and 3 images per row on material library page
 * `right-aligned-definitions-material-library` : for definition block : title bold + divider thicker & brown on hover on training page
 
-#### Support-us page
+### Support-us page
 
 Custom html selectors added through Osuny's backoffice include :
 * `right-aligned-chapter` : chapter right aligned
