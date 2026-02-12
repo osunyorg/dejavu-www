@@ -62,6 +62,8 @@ Custom html selectors added through Osuny's backoffice include :
 
 ### About-us page
 
+Special styling in **_about-us.sass**.
+
 Custom html selectors added through Osuny's backoffice include :
 * `centered-chapter` : chapter centered in the grid
 * `definitions-about-us-page` : definitions block centered, title bold + divider thicker & blue on hover
@@ -70,6 +72,8 @@ Custom html selectors added through Osuny's backoffice include :
 **Partial** to add a line break in people's role description. Partial is located in layouts > partials > persons : person.html
 
 ### Services page
+
+Special styling in **_services.sass**.
 
 Custom html selectors added through Osuny's backoffice include :
 * `chapter-title` : for chapter block : font styling on all services pages
@@ -81,6 +85,8 @@ Custom html selectors added through Osuny's backoffice include :
 * `right-aligned-definitions-material-library` : for definition block : title bold + divider thicker & brown on hover on training page
 
 ### Support-us page
+
+Special styling in **_support.sass**.
 
 Custom html selectors added through Osuny's backoffice include :
 * `right-aligned-chapter` : chapter right aligned
