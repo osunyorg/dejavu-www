@@ -1,5 +1,11 @@
 # Déjà-vu website
 
+## About Osuny
+
+[Documentation officielle sur developers.osuny.org](https://developers.osuny.org/docs/website/)
+
+This project is tested with BrowserStack.
+
 ## Architecture
 
 Styling files all located in **assets > saas directory** :
@@ -78,9 +84,3 @@ Custom html selectors added through Osuny's backoffice include :
 
 Custom html selectors added through Osuny's backoffice include :
 * `right-aligned-chapter` : chapter right aligned
-
-## About Osuny
-
-[Documentation officielle sur developers.osuny.org](https://developers.osuny.org/docs/website/)
-
-This project is tested with BrowserStack.
