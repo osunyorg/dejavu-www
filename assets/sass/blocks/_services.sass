@@ -76,34 +76,32 @@
 // MATERIAL LIBRARY PAGE //
 
 // Gallery block
-.block-class-custom-grid
-    @include in-page-with-sidebar
-        .gallery
-            @include flexbox-grid(3)
-            figure picture
-                aspect-ratio: 1 / 1
-                img
-                    width: 100%
-                    height: 100%
-                    object-fit: cover
+.block-class-custom-grid.block-gallery--grid
+    .gallery
+        @include flexbox-grid(3)
+        figure picture
+            aspect-ratio: 1 / 1
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
 
 // Definitions block
 .block-class-right-aligned-definitions-material-library
-    @include in-page-with-sidebar
-        .definitions
-            details summary:hover
-                font-weight: bold
-            details:hover::after
-                border-bottom-color: $color-accent-material-library
-                border-bottom-width: calc(var(--border-width) * 3)
-            // Image inside "4. Nous trouver" definition
-            details:nth-child(4) [itemprop="description"]::after
-                content: ""
-                display: block
-                margin-top: $spacing-3
-                width: 100%
-                aspect-ratio: 16 / 9
-                background-image: url("/assets/images/plan-locaux.jpg")
-                background-size: cover
-                background-repeat: no-repeat
-                background-position: center
+    .definitions
+        details summary:hover
+            font-weight: bold
+        details:hover::after
+            border-bottom-color: $color-accent-material-library
+            border-bottom-width: calc(var(--border-width) * 3)
+        // Image inside "4. Nous trouver" definition
+        details:nth-child(4) [itemprop="description"]::after
+            content: ""
+            display: block
+            margin-top: $spacing-3
+            width: 100%
+            aspect-ratio: 16 / 9
+            background-image: url("/assets/images/plan-locaux.jpg")
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
