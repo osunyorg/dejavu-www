@@ -24,9 +24,9 @@
 
 // Image block
 .block-image
-    @include in-page-with-sidebar
-        picture
-            margin-right: 0
+    picture
+        margin-left: 0
+        margin-right: 0
 
 // CTA block
 .block-class-right-aligned-cta .call_to_action .description p
@@ -47,25 +47,23 @@
 
 // Definitions block
 .block-class-right-aligned-definitions-consulting
-    @include in-page-with-sidebar
-        .definitions
-            details summary:hover
-                font-weight: bold
-            details:hover::after
-                border-bottom-color: $color-accent-consulting
-                border-bottom-width: calc(var(--border-width) * 3)
+    .definitions
+        details summary:hover
+            font-weight: bold
+        details:hover::after
+            border-bottom-color: $color-accent-consulting
+            border-bottom-width: calc(var(--border-width) * 3)
 
 // TRAINING PAGE //
 
 // Definitions block
 .block-class-right-aligned-definitions-training
-    @include in-page-with-sidebar
-        .definitions
-            details summary:hover
-                font-weight: bold
-            details:hover::after
-                border-bottom-color: $color-accent-training
-                border-bottom-width: calc(var(--border-width) * 3)
+    .definitions
+        details summary:hover
+            font-weight: bold
+        details:hover::after
+            border-bottom-color: $color-accent-training
+            border-bottom-width: calc(var(--border-width) * 3)
 
 // ADVOCACY PAGE
 

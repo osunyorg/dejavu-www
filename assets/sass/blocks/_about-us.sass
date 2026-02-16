@@ -10,6 +10,12 @@
 
 // Definitions block
 .block-class-definitions-about-us-page
+    .definitions
+        details summary:hover
+            font-weight: bold
+        details:hover::after
+            border-bottom-color: $color-accent-about-us
+            border-bottom-width: calc(var(--border-width) * 3)
     @include in-page-without-sidebar
         .definitions
             width: columns(8)
@@ -18,11 +24,6 @@
             details p
                 padding-left: 0
                 margin-left: 0
-            details summary:hover
-                font-weight: bold
-            details:hover::after
-                border-bottom-color: $color-accent-about-us
-                border-bottom-width: calc(var(--border-width) * 3)
 
 // CTA block
 .block-class-right-aligned-button
