@@ -12,6 +12,7 @@ Styling files all located in **assets > saas directory** :
 * blocks
   * _about-us.sass
   * _homepage.sass
+  * _posts.sass
   * _services.sass
   * _support.sass
 * _configuration.sass
