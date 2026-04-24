@@ -15,94 +15,94 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/charline-milot-gabriel/index.html"
+from = "/charline-milot-gabriel/"
 to = "/personnes/charline-milot-gabriel/"
 
 [[redirects]]
-from = "/celia-journeaux/index.html"
+from = "/celia-journeaux/"
 to = "/personnes/celia-journeaux/"
 
 [[redirects]]
-from = "/charlotte-poncet/index.html"
+from = "/charlotte-poncet/"
 to = "/personnes/charlotte-poncet/"
 
 [[redirects]]
-from = "/a-propos/actualites/index.html"
+from = "/a-propos/actualites/"
 to = "/actualites/"
 
 [[redirects]]
-from = "/a-propos/actualites/2023-07-05-atelier-sur-leco-conception-des-signaletiques-dexposition-a-universcience/index.html"
+from = "/a-propos/actualites/2023-07-05-atelier-sur-leco-conception-des-signaletiques-dexposition-a-universcience/"
 to = "/actualites/2023-07-05-atelier-sur-leco-conception-des-signaletiques-dexposition-a-universcience/"
 
 [[redirects]]
-from = "/actualites/2026-02-06-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/index.html"
+from = "/actualites/2026-02-06-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/"
 to = "/actualites/2025-03-01-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/"
 
 [[redirects]]
-from = "/a-propos/actualites/2023-09-15-laureat-de-la-fondation-a-linnovation-sociale-2023-de-la-metropole-de-lyon/index.html"
+from = "/a-propos/actualites/2023-09-15-laureat-de-la-fondation-a-linnovation-sociale-2023-de-la-metropole-de-lyon/"
 to = "/actualites/2023-09-15-laureat-de-la-fondation-a-linnovation-sociale-2023-de-la-metropole-de-lyon/"
 
 [[redirects]]
-from = "/a-propos/qui-sommes-nous/index.html"
+from = "/a-propos/qui-sommes-nous/"
 to = "/qui-sommes-nous/"
 
 [[redirects]]
-from = "/emie-baud/actualites/index.html"
+from = "/emie-baud/actualites/"
 to = "/personnes/emie-baud/actualites/"
 
 [[redirects]]
-from = "/actualites/2026-02-06-sitem-2025-2eme-edition-pour-deja-vu/index.html"
+from = "/actualites/2026-02-06-sitem-2025-2eme-edition-pour-deja-vu/"
 to = "/actualites/2025-04-01-sitem-2025-2eme-edition-pour-deja-vu/"
 
 [[redirects]]
-from = "/a-propos/actualites/2023-06-22-selection-les-audacieux-de-helioz/index.html"
+from = "/a-propos/actualites/2023-06-22-selection-les-audacieux-de-helioz/"
 to = "/actualites/2023-06-22-selection-les-audacieux-de-helioz/"
 
 [[redirects]]
-from = "/conseil/index.html"
+from = "/conseil/"
 to = "/services/conseil/"
 
 [[redirects]]
-from = "/a-propos/actualites/2023-06-26-les-rencontres-des-entreprises-qui-se-transforment/index.html"
+from = "/a-propos/actualites/2023-06-26-les-rencontres-des-entreprises-qui-se-transforment/"
 to = "/actualites/2023-06-26-les-rencontres-des-entreprises-qui-se-transforment/"
 
 [[redirects]]
-from = "/emie-baud/index.html"
+from = "/emie-baud/"
 to = "/personnes/emie-baud/"
 
 [[redirects]]
-from = "/actualites/2026-02-06-exposition-jardinier-planetaire-la-preseance-du-vivant/index.html"
+from = "/actualites/2026-02-06-exposition-jardinier-planetaire-la-preseance-du-vivant/"
 to = "/actualites/2024-08-08-exposition-jardinier-planetaire-la-preseance-du-vivant/"
 
 [[redirects]]
-from = "/sylvain-couture/index.html"
+from = "/sylvain-couture/"
 to = "/personnes/sylvain-couture/"
 
 [[redirects]]
-from = "/a-propos/actualites/2023-04-25-seconde-vie-des-elements-de-signaletique/index.html"
+from = "/a-propos/actualites/2023-04-25-seconde-vie-des-elements-de-signaletique/"
 to = "/actualites/2023-04-25-seconde-vie-des-elements-de-signaletique/"
 
 [[redirects]]
-from = "/marc-renard/index.html"
+from = "/marc-renard/"
 to = "/personnes/marc-renard/"
 
 [[redirects]]
-from = "/formation/index.html"
+from = "/formation/"
 to = "/services/formation/"
 
 [[redirects]]
-from = "/materiautheque/index.html"
+from = "/materiautheque/"
 to = "/services/materiautheque/"
 
 [[redirects]]
-from = "/actualites/2026-02-04-exposition-jardinier-planetaire-la-preseance-du-vivant/index.html"
+from = "/actualites/2026-02-04-exposition-jardinier-planetaire-la-preseance-du-vivant/"
 to = "/actualites/2024-08-08-exposition-jardinier-planetaire-la-preseance-du-vivant/"
 
 [[redirects]]
-from = "/plaidoyer/index.html"
+from = "/plaidoyer/"
 to = "/services/plaidoyer/"
 
 [[redirects]]
-from = "/actualites/2026-02-05-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/index.html"
+from = "/actualites/2026-02-05-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/"
 to = "/actualites/2025-03-01-guide-daide-a-leco-conception-des-exposition-pour-paris-musees/"
 
