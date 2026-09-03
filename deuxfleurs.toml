@@ -20,7 +20,7 @@ to = "/personnes/charline-milot-gabriel/"
 
 [[redirects]]
 from = "/celia-journeaux/index.html"
-to = "/personnes/celia-journeaux/"
+to = "/personnes/marine-bauduin/"
 
 [[redirects]]
 from = "/charlotte-poncet/index.html"
@@ -45,6 +45,10 @@ to = "/actualites/2023-09-15-laureat-de-la-fondation-a-linnovation-sociale-2023-
 [[redirects]]
 from = "/a-propos/qui-sommes-nous/index.html"
 to = "/qui-sommes-nous/"
+
+[[redirects]]
+from = "/personnes/celia-journeaux/index.html"
+to = "/personnes/marine-bauduin/"
 
 [[redirects]]
 from = "/emie-baud/actualites/index.html"
